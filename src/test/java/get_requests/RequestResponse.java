@@ -54,6 +54,9 @@ public class RequestResponse {
         //Headers nasıl yazdırılır?
         System.out.println(response.headers());
 
+        //Time nasıl yazdirilir
+        System.out.println("time=" + response.getTime());
+
 
     }
 

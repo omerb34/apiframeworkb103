@@ -35,9 +35,9 @@ public class Get01 {
 
 //        iv)  Do assertion
         response.
-                then().
-                statusCode(200).//HTTP Status Code should be 200
-                contentType("application/json").//Content Type should be JSON
+                then().//!!!Çokönemli!!!=> buradaki then methodu bize assertion yapıyor...!!
+                statusCode(200).//HTTP Status Code  200 olmalı
+                contentType("application/json").//Content Type JSON olmalı
                 statusLine("HTTP/1.1 200 OK");//Status Line should be HTTP/1.1 200 OK
 
     }
