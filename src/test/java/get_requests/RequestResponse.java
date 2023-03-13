@@ -57,7 +57,6 @@ public class RequestResponse {
         //Time nasıl yazdirilir
         System.out.println("time=" + response.getTime());
 
-
     }
 
 }
