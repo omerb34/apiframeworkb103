@@ -40,7 +40,9 @@ public class Get05 extends HerOkuAppBaseUrl {
         response.then().statusCode(200);//Status code is 200
 
         // Among the data there should be someone whose firstname is "Sally" and last name is "Brown"
+        //buradaki mantık şu: consolda bir sürü id görüyorum demekki bu isimde bişeri var ki id oluşmuş..
         assertTrue(response.asString().contains("bookingid"));
+
 
 
 
