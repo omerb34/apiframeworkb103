@@ -66,7 +66,9 @@ public class Put01 extends JsonPlaceHolderBaseUrl {
 
 
     @Test//Dinamik Yöntem
+
     public void put01b() {
+
         //Set the URL
         spec.pathParams("first", "todos", "second", 198);
 
