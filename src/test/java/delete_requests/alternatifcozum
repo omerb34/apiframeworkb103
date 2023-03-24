@@ -1,0 +1,25 @@
+/*
+    // 1. Matcher class
+assertEquals(200, response.statusCode());
+response.
+        then().
+        assertThat().
+        body("status", equalTo(expectedData.get("status")),
+                "data", equalTo(expectedData.get("data")),
+                "message", equalTo(expectedData.get("message")));
+
+// 2. JsonPath
+JsonPath jsonPath = response.jsonPath();
+assertEquals(expectedData.get("status"), jsonPath.getString("status"));
+assertEquals(expectedData.get("data"), jsonPath.getString("data"));
+assertEquals(expectedData.get("message"), jsonPath.getString("message"));
+
+// 3. Pojo
+DummyDelete expectedData1 = new DummyDelete("success", "2", "Successfully! Record has been deleted");
+DummyDelete actualData1 = ObjeMApperUtils.convertJsonJava(response.asString(), DummyDelete.class);
+
+assertEquals(expectedData1.getStatus(),actualData1.getStatus());
+assertEquals(expectedData1.getData(),actualData1.getData());
+assertEquals(expectedData1.getMessage(),actualData1.getMessage());
+
+     */
